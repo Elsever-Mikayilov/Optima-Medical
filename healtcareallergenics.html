@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Optima Medical</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top d-flex align-items-center justify-content-between">
+            <div class="welcome left">
+                <h4>Welcome you to Optima store!</h4>
+            </div>
+            <div class="right d-flex flex-row-reverse gap-4 justify-content-around">
+                <div class="language">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="currency">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            USD $
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">USD $</a></li>
+                            <li><a class="dropdown-item" href="#">EUR €</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="account">
+                    <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            <li><a class="dropdown-item" href="signin.html">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="locator">
+                    <a href="storelocator.html"><i class="fa-solid fa-location-dot"></i> Share Locator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-center">
+            <div class="container1">
+                <div class="row align-items-center">
+                    <div class="header-center-logo col col-center col-md-2">
+                        <img src="images/header-logo.jpg" alt="logo">
+                    </div>
+                    <div class="col col-right col-md-10 d-flex align-items-center justify-content-between">
+                        <div class="search">
+                            <form action="#" class="d-flex align-items-center justify-content-center">
+                                <input type="text" placeholder="Enter your search key ... ">
+                                <select name="all" id="all">
+                                    <option value="0">All categories</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="contact d-flex">
+                            <div class="phone d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-address-book"></i>
+                                <div class="number">
+                                    <p class="mb-0">Call us:</p>
+                                    <a href="#" class="text-white">(+123)456789</a>
+                                </div>
+                            </div>
+
+                            <div class="store d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-store"></i>
+                                <div class="price">
+                                    <p class="my-auto fw-bold">$47.61</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <ul class="d-flex align-items-center gap-5 list-unstyled p-3">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pharmacy
+                        </button>
+                        <ul class="sub-menu dropdown-menu col-xs-12 col-sm-12" aria-labelledby="dropdownMenuButton1">
+                            <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">French</a></li> -->
+                            <div class="sub-inner">
+                                <div class="row">
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Medic Tools
+                        </button>
+                        <ul class="sub-menu dropdown-menu col-xs-12 col-sm-12" aria-labelledby="dropdownMenuButton1">
+                            <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">French</a></li> -->
+                            <div class="sub-inner">
+                                <div class="row">
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Health & Medical
+                        </button>
+                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="healtcareallergenics.html">Allergenics</a></li>
+                            <li><a class="dropdown-item" href="#">Laxatives</a></li>
+                            <li><a class="dropdown-item" href="#">Macrollides</a></li>
+                            <li><a class="dropdown-item" href="#">Oximeter</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="personalcare.html">Personal Care</a></li>
+                <li><a href="#">Diet & Nutrition</a></li>
+                <li><a href="skincare.html">Skin care</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header-mobile py-4 px-3">
+        <div class="header-mobile-top mb-4">
+            <div class="nav-mobile d-flex align-items-center justify-content-between">
+                <div class="menu-bar-mobile">
+                    <i class="text-white fa-solid fa-bars fs-3"></i>
+                </div>
+                <div class="logo-mobile">
+                    <img src="images/header-logo.jpg" alt="logo">
+                </div>
+                <div class="info-mobile d-flex">
+                    <div class="account-mobile fs-3">
+                        <a href="#"><i class="text-white fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="store-mobile fs-3">
+                        <a href="storelocator.html"><i class="text-white fa-solid fa-store"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile-bottom">
+            <form action="#" class="d-flex align-items-center justify-content-center">
+                <input class="w-100" type="text" placeholder="Enter your search key ... ">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <section id="section">
+        <div class="container">
+            <nav>
+                <ol>
+                    <li><a>Home > </a></li>
+                    <li><a>Health & Medical ></a></li>
+                    <li><a
+                            href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics"><span>Allergiencs</span></a>
+                    </li>
+                </ol>
+            </nav>
+            <div class="row">
+                <div id="left-cloumn" class="col-12 col-sm-4 col-md-3">
+                    <div class="block-categories hiddem-sm-down">
+                        <ul class="category-top-menu list-unstyled">
+                            <li>
+                                <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics"
+                                    class="text-uppercase h6">
+                                    Allergenics</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="search_filters_wrapper" class="hidden-sm-down">
+                        <div id="search-filters_wrapper" class="hidden-sm-up">
+                            <div id="search_filters_controls" class="hidden-md-up">
+                                <span id="mobile_search_filters_clear_all"></span>
+                            </div>
+                        </div>
+                        <div id="search_filters">
+                            <p class="text-uppercase h6 hidden-sm-down">
+                                Filter By
+                            </p>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Color</p>
+                                <div class="title hidden-md-up" data-target="#facet_74899" data-toggle="collapse">
+                                </div>
+                                <ul id="facet_61473" class="collapse list-unstyled">
+                                    <li>
+                                        <label for="facet_input_61473_0" class="facet-label">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_61473_0"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Color-White"
+                                                    type="checkbox">
+                                                <span class="color" style="background-color:#ffffff"></span>
+                                                <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Color-White"
+                                                    class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                    White
+                                                    <span class="magnitude">(3)</span>
+                                                </a>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="facet-label" for="facet_input_61473_1">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_61473_1"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Color-Black"
+                                                    type="checkbox">
+                                                <span class="color" style="background-color:#1e1f20"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Color-Black"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Black
+                                                <span class="magnitude">(3)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Size</p>
+                                <div class="title hidden-md-up" data-target="#facet_17623" data-toggle="collapse">
+                                </div>
+                                <ul id="facet_17623" class="collapse list-unstyled">
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_17623_0">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_17623_0"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-S"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-S"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                S
+                                                <span class="magnitude">(4)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_17623_1">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_17623_1"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-M"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-M"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                M
+                                                <span class="magnitude">(4)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_17623_2">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_17623_2"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-L"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-L"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                L
+                                                <span class="magnitude">(4)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_17623_3">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_17623_3"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-XL"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Size-XL"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                XL
+                                                <span class="magnitude">(4)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                </ul>
+
+
+                            </section>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Property</p>
+                                <div class="title hidden-md-up" data-target="#facet_7875" data-toggle="collapse">
+                                    </span>
+                                </div>
+                                <ul id="facet_7875" class="collapse list-unstyled">
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_7875_0">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_7875_0"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Property-Long+sleeves"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Property-Long+sleeves"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Long sleeves
+                                                <span class="magnitude">(1)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_7875_1">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_7875_1"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Property-Short+sleeves"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Property-Short+sleeves"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Short sleeves
+                                                <span class="magnitude">(3)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Composition</p>
+                                <div class="title hidden-md-up" data-target="#facet_57810" data-toggle="collapse">
+                                </div>
+                                <ul id="facet_57810" class="collapse list-unstyled">
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_57810_0">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_57810_0"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Composition-Ceramic"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Composition-Ceramic"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Ceramic
+                                                <span class="magnitude">(4)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_57810_1">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_57810_1"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Composition-Cotton"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Composition-Cotton"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Cotton
+                                                <span class="magnitude">(4)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_57810_2">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_57810_2"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Composition-Matt+paper"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Composition-Matt+paper"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Matt paper
+                                                <span class="magnitude">(5)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                </ul>
+
+
+                            </section>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Availability</p>
+                                <div class="title hidden-md-up" data-target="#facet_46471" data-toggle="collapse">
+                                </div>
+                                <ul id="facet_46471" class="collapse list-unstyled">
+                                    <li>
+                                        <label class="facet-label" for="facet_input_46471_0">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_46471_0"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Availability-In+stock"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Availability-In+stock"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                In stock
+                                                <span class="magnitude">(13)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_46471_1">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_46471_1"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Availability-Not+available"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Availability-Not+available"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Not available
+                                                <span class="magnitude">(2)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                </ul>
+
+
+                            </section>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Brand</p>
+                                <div class="title hidden-md-up" data-target="#facet_94778" data-toggle="collapse">
+                                </div>
+                                <ul id="facet_94778" class="collapse list-unstyled">
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_94778_0">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_94778_0"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Brand-Graphic+Corner"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Brand-Graphic+Corner"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Graphic Corner
+                                                <span class="magnitude">(5)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="facet-label" for="facet_input_94778_1">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_94778_1"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Brand-Studio+Design"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Brand-Studio+Design"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                Studio Design
+                                                <span class="magnitude">(8)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                </ul>
+
+
+                            </section>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Price</p>
+                                <div class="title hidden-md-up" data-target="#facet_25647" data-toggle="collapse">
+                                </div>
+                                <ul id="facet_25647" class="faceted-slider collapse list-unstyled" data-slider-min="29"
+                                    data-slider-max="44" data-slider-id="25647" data-slider-values="null"
+                                    data-slider-unit="$" data-slider-label="Price"
+                                    data-slider-specifications="{&quot;symbol&quot;:[&quot;.&quot;,&quot;,&quot;,&quot;;&quot;,&quot;%&quot;,&quot;-&quot;,&quot;+&quot;,&quot;E&quot;,&quot;\u00d7&quot;,&quot;\u2030&quot;,&quot;\u221e&quot;,&quot;NaN&quot;],&quot;currencyCode&quot;:&quot;USD&quot;,&quot;currencySymbol&quot;:&quot;$&quot;,&quot;numberSymbols&quot;:[&quot;.&quot;,&quot;,&quot;,&quot;;&quot;,&quot;%&quot;,&quot;-&quot;,&quot;+&quot;,&quot;E&quot;,&quot;\u00d7&quot;,&quot;\u2030&quot;,&quot;\u221e&quot;,&quot;NaN&quot;],&quot;positivePattern&quot;:&quot;\u00a4#,##0.00&quot;,&quot;negativePattern&quot;:&quot;-\u00a4#,##0.00&quot;,&quot;maxFractionDigits&quot;:2,&quot;minFractionDigits&quot;:2,&quot;groupingUsed&quot;:true,&quot;primaryGroupSize&quot;:3,&quot;secondaryGroupSize&quot;:3}"
+                                    data-slider-encoded-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics">
+                                    <li>
+                                        <p id="facet_label_25647">$29.00 - $44.00</p>
+                                        <div id="slider-range_25647"
+                                            class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"
+                                            aria-disabled="false">
+                                            <div class="ui-slider-range ui-widget-header ui-corner-all"
+                                                style="left: 0%; width: 100%;"></div><a
+                                                class="ui-slider-handle ui-state-default ui-corner-all" href="#"
+                                                style="left: 0%;"></a><a
+                                                class="ui-slider-handle ui-state-default ui-corner-all" href="#"
+                                                style="left: 100%;"></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="facet clearfix">
+                                <p class="h6 facet-title hidden-sm-down">Dimension</p>
+                                <div class="title hidden-md-up" data-target="#facet_5652" data-toggle="collapse">
+                                </div>
+                                <ul id="facet_5652" class="collapse list-unstyled">
+                                    <li>
+                                        <label class="facet-label" for="facet_input_5652_0">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_5652_0"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Dimension-40x60cm"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Dimension-40x60cm"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                40x60cm
+                                                <span class="magnitude">(5)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="facet-label" for="facet_input_5652_1">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_5652_1"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Dimension-60x90cm"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Dimension-60x90cm"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                60x90cm
+                                                <span class="magnitude">(5)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="facet-label" for="facet_input_5652_2">
+                                            <span class="custom-checkbox">
+                                                <input id="facet_input_5652_2"
+                                                    data-search-url="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Dimension-80x120cm"
+                                                    type="checkbox">
+                                                <span class="ps-shown-by-js"></span>
+                                            </span>
+                                            <a href="http://demo.posthemes.com/pos_optima_medical6789/medical8/en/67-allergenics?q=Dimension-80x120cm"
+                                                class="_gray-darker search-link js-search-link" rel="nofollow">
+                                                80x120cm
+                                                <span class="magnitude">(5)</span>
+                                            </a>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="advertising">
+                        <a href="https://www.prestashop.com/en">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/modules/ps_advertising/img/advertising-s3.jpg"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="main left-column col-xs-12 col-sm-8 col-md-9">
+                    <div class="main-title">
+                        <h1>ALLERGENICS</h1>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-selection">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <span class="col-sm-3 col-md-3 sort-by">Sort by:</span>
+                                        <div class="col-sm-5 col-xs-5 col-md-9">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Relevance
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+                                                    <li><a class="dropdown-item" href="#">Relevance</a></li>
+                                                    <li><a class="dropdown-item" href="#">Name, A to Z</a></li>
+                                                    <li><a class="dropdown-item" href="#">Name, Z to A</a></li>
+                                                    <li><a class="dropdown-item" href="#">Price, low to high</a></li>
+                                                    <li><a class="dropdown-item" href="#">Price, high to low</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right col-md-6 d-flex justify-content-between align-items-center">
+                                    <p>There are 13 products.</p>
+                                    <ul class="d-flex list-unstyled">
+                                        <li><a href="#">
+                                                <i class="mx-2 fa-solid fa-grip"></i></a></li>
+                                        <li><a href="#">
+                                                <i class="text-secondary fa-solid fa-list"></i>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products row grid">
+                            <div class="row align-items-center">
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/38-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Autoclave & Sterilizers
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new1">
+                                                <p>-6%</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/47-home_default/diagnostic-equipments.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Dental Equipments1
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new1">
+                                                <p>-6%</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/35-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/35-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/45-home_default/diagnostic-equipments.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/45-home_default/diagnostic-equipments.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Blood Equipments
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/47-home_default/diagnostic-equipments.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Diagnostic Equipments
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Anaesthesia Equipments
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/81-home_default/baby-care-equipments1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Dental Equipments
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/105-home_default/autoclave-sterilizers.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Autoclave & Sterilizers 1
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/47-home_default/diagnostic-equipments.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">
+                                                        Dental Equipments1
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/81-home_default/baby-care-equipments1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/99-home_default/dental-equipments1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/105-home_default/autoclave-sterilizers.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/93-home_default/blood-collection-tubes1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Blood Equipments1
+                                                    </a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="personal-care-items">
+                                        <div class="box">
+                                            <div class="box-new">
+                                                <p>New</p>
+                                            </div>
+                                            <div class="box-img">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/93-home_default/blood-collection-tubes1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-img-1">
+                                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                                    alt="">
+                                            </div>
+                                            <div class="box-content">
+                                                <p><a href="#" class="fir">Graphic Corner</a></p>
+                                                <p><a href="#" class="sec">Dental Equipments1</a></p>
+                                                <div class="box-ico d-flex">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <p>$39.00</p>
+                                                <button>Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="content-wrapper" class="left-column col-xs-12 col-sm-8 col-md-9">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <!-- <div class="container"> -->
+            <div class="d-flex row">
+                <div class=" left col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="all-left">
+                        <div class="left-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/logo_footer.png"
+                                alt="">
+                        </div>
+                        <div class="left-content">
+                            <div class="left-head">
+                                <p>We are a team of designers and developers that create high quality Magento,
+                                    Prestashop, Opencart.</p>
+                            </div>
+                            <div class="left-phone d-flex">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div class="left-phone-text">
+                                    <p class="help">NEED HELP?</p>
+                                    <p class="numb">(+800) 345 678, (+800) 123 456</p>
+                                </div>
+                            </div>
+                            <div class="left-icons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="left-last">
+                                <p>Copyright © Posthemes. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" right col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Prices Drop</a></li>
+                                            <li><a href="#">New Products</a></li>
+                                            <li><a href="#">Best Sales</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Prices Drop</a></li>
+                                            <li><a href="#">New Products</a></li>
+                                            <li><a href="#">Best Sales</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content last">
+                                        <ul class="list-unstyled last-ul">
+                                            <li><a href="#">Sign up for our e-mail to get latest news.</a></li>
+                                            <li class="sign"><a href="#">
+                                                    <form>
+                                                        <input type="email" placeholder="Your email adress">
+                                                        <button>Sign Up</button>
+                                                    </form>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="li-img d-flex">
+                                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/app_store.png"
+                                                            alt="">
+                                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/google_play.png"
+                                                            alt="">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-imgs">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/payment.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </footer>
+    <script src="vendors/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

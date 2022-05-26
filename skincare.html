@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPTIMA</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="vendors/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-top d-flex align-items-center justify-content-between">
+            <div class="welcome left">
+                <h4>Welcome you to Optima store!</h4>
+            </div>
+            <div class="right d-flex flex-row-reverse gap-4 justify-content-around">
+                <div class="language">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="currency">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            USD $
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">USD $</a></li>
+                            <li><a class="dropdown-item" href="#">EUR €</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="account">
+                    <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            <li><a class="dropdown-item" href="signin.html">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="locator">
+                    <a href="storelocator.html"><i class="fa-solid fa-location-dot"></i> Share Locator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-center">
+            <div class="container1">
+                <div class="row align-items-center">
+                    <div class="header-center-logo col col-center col-md-2">
+                        <img src="images/header-logo.jpg" alt="logo">
+                    </div>
+                    <div class="col col-right col-md-10 d-flex align-items-center justify-content-between">
+                        <div class="search">
+                            <form action="#" class="d-flex align-items-center justify-content-center">
+                                <input type="text" placeholder="Enter your search key ... ">
+                                <select name="all" id="all">
+                                    <option value="0">All categories</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="contact d-flex">
+                            <div class="phone d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-address-book"></i>
+                                <div class="number">
+                                    <p class="mb-0">Call us:</p>
+                                    <a href="#" class="text-white">(+123)456789</a>
+                                </div>
+                            </div>
+
+                            <div class="store d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-store"></i>
+                                <div class="price">
+                                    <p class="my-auto fw-bold">$47.61</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <ul class="d-flex align-items-center gap-5 list-unstyled p-3">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pharmacy
+                        </button>
+                        <ul class="sub-menu dropdown-menu col-xs-12 col-sm-12" aria-labelledby="dropdownMenuButton1">
+                            <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">French</a></li> -->
+                            <div class="sub-inner">
+                                <div class="row">
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Medic Tools
+                        </button>
+                        <ul class="sub-menu dropdown-menu col-xs-12 col-sm-12" aria-labelledby="dropdownMenuButton1">
+                            <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">French</a></li> -->
+                            <div class="sub-inner">
+                                <div class="row">
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Health & Medical
+                        </button>
+                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="healtcareallergenics.html">Allergenics</a></li>
+                            <li><a class="dropdown-item" href="#">Laxatives</a></li>
+                            <li><a class="dropdown-item" href="#">Macrollides</a></li>
+                            <li><a class="dropdown-item" href="#">Oximeter</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="personalcare.html">Personal Care</a></li>
+                <li><a href="#">Diet & Nutrition</a></li>
+                <li><a href="skincare.html">Skin care</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header-mobile py-4 px-3">
+        <div class="header-mobile-top mb-4">
+            <div class="nav-mobile d-flex align-items-center justify-content-between">
+                <div class="menu-bar-mobile">
+                    <i class="text-white fa-solid fa-bars fs-3"></i>
+                </div>
+                <div class="logo-mobile">
+                    <img src="images/header-logo.jpg" alt="logo">
+                </div>
+                <div class="info-mobile d-flex">
+                    <div class="account-mobile fs-3">
+                        <a href="#"><i class="text-white fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="store-mobile fs-3">
+                        <a href="storelocator.html"><i class="text-white fa-solid fa-store"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile-bottom">
+            <form action="#" class="d-flex align-items-center justify-content-center">
+                <input class="w-100" type="text" placeholder="Enter your search key ... ">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container1">
+
+        <nav>
+            <ol>
+                <li><a>Home > </a></li>
+                <li><a><span>Skin Care</span></a></li>
+            </ol>
+        </nav>
+
+        <section id="wrapper">
+            <div class="row">
+                <div class="aside left-column col-xs-12 col-sm-4 col-md-3">
+                    <div class="aside-title">
+                        <a href="#">Skin Care</a>
+                    </div>
+                    <div class="aside-filter">
+                        <h5>Filter By</h5>
+                        <section class="filter-color">
+                            <p>Color</p>
+                            <ul>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">White <span>(3)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox text-black"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Black <span>(3)</span></a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="filter-size">
+                            <p>Size</p>
+                            <ul>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">S <span>(5)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">M <span>(5)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">L <span>(5)</span></a>
+                                </li>
+                                <li><span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">XL <span>(5)</span></a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="filter-property">
+                            <p>Property</p>
+                            <ul>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Long Sleeves <span>(2)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Short Sleeves <span>(3)</span></a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="filter-composition">
+                            <p>Composition</p>
+                            <ul>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Cotton <span>(5)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Matt paper <span>(2)</span></a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="filter-availability">
+                            <p>Availability</p>
+                            <ul>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">In stock <span>(7)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Not available <span>(2)</span></a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="filter-brand">
+                            <p>Brand</p>
+                            <ul>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Graphic Corner <span>(2)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">Studio Design <span>(5)</span></a>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="filter-price">
+                            <p>Price</p>
+                            <ul>
+                                <li>
+                                    <p class="price">$29.00 - $44.00</p>
+                                    <div class="rangeslider">
+                                        <input class="min" name="range_1" type="range" min="1" max="100" value="0" />
+                                        <input class="max" name="range_1" type="range" min="1" max="100" value="100" />
+                                        <!-- <span class="range_min light left">10.000 €</span> -->
+                                        <!-- <span class="range_max light right">90.000 €</span> -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <section class="filter-dimension">
+                            <p>Dimension</p>
+                            <ul>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">40x60cm <span>(2)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">60x90cm <span>(2)</span></a>
+                                </li>
+                                <li>
+                                    <span class="checkbox"><i class="fa-solid fa-square"></i></span>
+                                    <a href="#">80x120cm <span>(2)</span></a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="main left-column col-xs-12 col-sm-8 col-md-9">
+                    <div class="main-title">
+                        <h1>Skin Care</h1>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-selection">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <span class="col-sm-3 col-md-3 sort-by">Sort by:</span>
+                                        <div class="relevance col-sm-6 col-xs-5 col-md-9">
+                                            <div class="dropdown">
+                                                <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Relevance         
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+                                                    <li><a class="dropdown-item" href="#">Relevance</a></li>
+                                                    <li><a class="dropdown-item" href="#">Name, A to Z</a></li>
+                                                    <li><a class="dropdown-item" href="#">Name, Z to A</a></li>
+                                                    <li><a class="dropdown-item" href="#">Price, low to high</a></li>
+                                                    <li><a class="dropdown-item" href="#">Price, high to low</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="mobile-filter-button">
+                                                <button>FILTER</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right col-md-6 d-flex justify-content-between align-items-center">
+                                    <p>There are 7 products.</p>
+                                    <ul class="d-flex list-unstyled">
+                                        <li><a href="#">
+                                                <i class="mx-2 fa-solid fa-table-cells"></i> </a></li>
+                                        <li><a href="#">
+                                                <i class="text-secondary fa-solid fa-list"></i>
+                                            </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products row grid">
+                            <div class="product col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="img-block">
+                                    <img src="images/sterilizers.jpg" alt="">
+                                </div>
+                                <div class="product-desc">
+                                    <div class="desc-info">
+                                        <div class="manufacturer">
+                                            <a href="#">Studio Design</a>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Autoclave & Sterilizers</a>
+                                        </h4>
+                                        <div class="reviews">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <span class="price-sale">$40.61</span>
+                                            <span class="price-regular">$40.61</span>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="img-block">
+                                    <img src="images/brown-bear-printed-sweater.jpg" alt="">
+                                </div>
+                                <div class="product-desc">
+                                    <div class="desc-info">
+                                        <div class="manufacturer">
+                                            <a href="#">Studio Design</a>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Hummingbird Printed Sweater</a>
+                                        </h4>
+                                        <div class="reviews">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <!-- <span class="price-sale">$40.61</span> -->
+                                            <span class="price-regular enabled">$35.90</span>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="img-block">
+                                    <img src="images/blood-equipments.jpg" alt="">
+                                </div>
+                                <div class="product-desc">
+                                    <div class="desc-info">
+                                        <div class="manufacturer">
+                                            <a href="#">Graphic Corner</a>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Blood Equipments</a>
+                                        </h4>
+                                        <div class="reviews">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <!-- <span class="price-sale">$40.61</span> -->
+                                            <span class="price-regular enabled">$29.00</span>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="img-block">
+                                    <img src="images/autoclave.jpg" alt="">
+                                </div>
+                                <div class="product-desc">
+                                    <div class="desc-info">
+                                        <div class="manufacturer">
+                                            <a href="#">Studio Design</a>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Autoclave & Sterilizers</a>
+                                        </h4>
+                                        <div class="reviews">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <!-- <span class="price-sale">$40.61</span> -->
+                                            <span class="price-regular enabled">$51.70</span>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="img-block">
+                                    <img src="images/hummingbird-printed-sweater2.jpg" alt="">
+                                </div>
+                                <div class="product-desc">
+                                    <div class="desc-info">
+                                        <div class="manufacturer">
+                                            <a href="#">Studio Design</a>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Hummingbird Printed Sweater1</a>
+                                        </h4>
+                                        <div class="reviews">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <!-- <span class="price-sale">$40.61</span> -->
+                                            <span class="price-regular enabled">$35.90</span>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="img-block">
+                                    <img src="images/mask.jpg" alt="">
+                                </div>
+                                <div class="product-desc">
+                                    <div class="desc-info">
+                                        <div class="manufacturer">
+                                            <a href="#">Graphic Corner</a>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Blood Equipments</a>
+                                        </h4>
+                                        <div class="reviews">
+                                            <i class="fa-solid fa-star text-secondary"></i>
+                                            <i class="fa-solid fa-star text-secondary"></i>
+                                            <i class="fa-solid fa-star text-secondary"></i>
+                                            <i class="fa-solid fa-star text-secondary"></i>
+                                            <i class="fa-solid fa-star text-secondary"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <!-- <span class="price-sale">$40.61</span> -->
+                                            <span class="price-regular enabled">$29.00</span>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                <div class="img-block">
+                                    <img src="images/autoclave-sterilizers2.jpg" alt="">
+                                </div>
+                                <div class="product-desc">
+                                    <div class="desc-info">
+                                        <div class="manufacturer">
+                                            <a href="#">Studio Design</a>
+                                        </div>
+                                        <h4>
+                                            <a href="#">Autoclave & Sterilizers</a>
+                                        </h4>
+                                        <div class="reviews">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="product-price">
+                                            <!-- <span class="price-sale">$40.61</span> -->
+                                            <span class="price-regular enabled">$36.20</span>
+                                        </div>
+                                        <div class="add-to-cart">
+                                            <a href="#" class="bg-secondary">Add To Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <!-- <div class="container"> -->
+            <div class="d-flex row">
+                <div class=" left col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="all-left">
+                        <div class="left-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/logo_footer.png"
+                                alt="">
+                        </div>
+                        <div class="left-content">
+                            <div class="left-head">
+                                <p>We are a team of designers and developers that create high quality Magento,
+                                    Prestashop, Opencart.</p>
+                            </div>
+                            <div class="left-phone d-flex">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div class="left-phone-text">
+                                    <p class="help">NEED HELP?</p>
+                                    <p class="numb">(+800) 345 678, (+800) 123 456</p>
+                                </div>
+                            </div>
+                            <div class="left-icons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="left-last">
+                                <p>Copyright © Posthemes. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" right col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Prices Drop</a></li>
+                                            <li><a href="#">New Products</a></li>
+                                            <li><a href="#">Best Sales</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Prices Drop</a></li>
+                                            <li><a href="#">New Products</a></li>
+                                            <li><a href="#">Best Sales</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content last">
+                                        <ul class="list-unstyled last-ul">
+                                            <li><a href="#">Sign up for our e-mail to get latest news.</a></li>
+                                            <li class="sign"><a href="#">
+                                                    <form>
+                                                        <input type="email" placeholder="Your email adress">
+                                                        <button>Sign Up</button>
+                                                    </form>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="li-img d-flex">
+                                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/app_store.png"
+                                                            alt="">
+                                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/google_play.png"
+                                                            alt="">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-imgs">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/payment.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </footer>
+    <script src="vendors/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

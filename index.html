@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendors/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Optima Medical</title>
+</head>
+
+<body>    
+    <header>
+        <div class="header-top d-flex align-items-center justify-content-between">
+            <div class="welcome left">
+                <h4>Welcome you to Optima store!</h4>
+            </div>
+            <div class="right d-flex flex-row-reverse gap-4 justify-content-around">
+                <div class="language">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            English
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li><a class="dropdown-item" href="#">French</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="currency">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            USD $
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">USD $</a></li>
+                            <li><a class="dropdown-item" href="#">EUR €</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="account">
+                    <div class="dropdown">
+                        <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                            <li><a class="dropdown-item" href="signin.html">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="locator">
+                    <a href="storelocator.html"><i class="fa-solid fa-location-dot"></i> Share Locator</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-center">
+            <div class="container1">
+                <div class="row align-items-center">
+                    <div class="header-center-logo col col-center col-md-2">
+                        <img src="images/header-logo.jpg" alt="logo">
+                    </div>
+                    <div class="col col-right col-md-10 d-flex align-items-center justify-content-between">
+                        <div class="search">
+                            <form action="#" class="d-flex align-items-center justify-content-center">
+                                <input type="text" placeholder="Enter your search key ... ">
+                                <select name="all" id="all">
+                                    <option value="0">All categories</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="3">Citroen</option>
+                                    <option value="4">Ford</option>
+                                    <option value="5">Honda</option>
+                                    <option value="6">Jaguar</option>
+                                    <option value="7">Land Rover</option>
+                                    <option value="8">Mercedes</option>
+                                    <option value="9">Mini</option>
+                                    <option value="10">Nissan</option>
+                                    <option value="11">Toyota</option>
+                                    <option value="12">Volvo</option>
+                                </select>
+                                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+                        <div class="contact d-flex">
+                            <div class="phone d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-address-book"></i>
+                                <div class="number">
+                                    <p class="mb-0">Call us:</p>
+                                    <a href="#" class="text-white">(+123)456789</a>
+                                </div>
+                            </div>
+
+                            <div class="store d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-store"></i>
+                                <div class="price">
+                                    <p class="my-auto fw-bold">$47.61</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <ul class="d-flex align-items-center gap-5 list-unstyled p-3">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Pharmacy
+                        </button>
+                        <ul class="sub-menu dropdown-menu col-xs-12 col-sm-12" aria-labelledby="dropdownMenuButton1">
+                            <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">French</a></li> -->
+                            <div class="sub-inner">
+                                <div class="row">
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Medic Tools
+                        </button>
+                        <ul class="sub-menu dropdown-menu col-xs-12 col-sm-12" aria-labelledby="dropdownMenuButton1">
+                            <!-- <li><a class="dropdown-item" href="#">English</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">French</a></li> -->
+                            <div class="sub-inner">
+                                <div class="row">
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+
+                                    <div class="menu-col col-xs-6 col-sm-3">
+                                        <ul class="column">
+                                            <li class="sub-menu-item">
+                                                <a href="#">Hair Care</a>
+                                            </li>
+                                            <ul class="p-0 sub-menu-category">
+                                                <li><a href="#">Contraceptives</a></li>
+                                                <li><a href="#">Drops</a></li>
+                                                <li><a href="#">Inhalers</a></li>
+                                                <li><a href="#">Consumable</a></li>
+                                                <li><a href="#">Decongestants</a></li>
+                                                <li><a href="#">Electrolytes</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Health & Medical
+                        </button>
+                        <ul class="dropdown-menu mt-3" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="healtcareallergenics.html">Allergenics</a></li>
+                            <li><a class="dropdown-item" href="#">Laxatives</a></li>
+                            <li><a class="dropdown-item" href="#">Macrollides</a></li>
+                            <li><a class="dropdown-item" href="#">Oximeter</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="personalcare.html">Personal Care</a></li>
+                <li><a href="#">Diet & Nutrition</a></li>
+                <li><a href="skincare.html">Skin care</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="header-mobile py-4 px-3">
+        <div class="header-mobile-top mb-4">
+            <div class="nav-mobile d-flex align-items-center justify-content-between">
+                <div class="menu-bar-mobile">
+                    <i class="text-white fa-solid fa-bars fs-3"></i>
+                </div>
+                <div class="logo-mobile">
+                    <img src="images/header-logo.jpg" alt="logo">
+                </div>
+                <div class="info-mobile d-flex">
+                    <div class="account-mobile fs-3">
+                        <a href="#"><i class="text-white fa-solid fa-user"></i></a>
+                    </div>
+                    <div class="store-mobile fs-3">
+                        <a href="storelocator.html"><i class="text-white fa-solid fa-store"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mobile-bottom">
+            <form action="#" class="d-flex align-items-center justify-content-center">
+                <input class="w-100" type="text" placeholder="Enter your search key ... ">
+                <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <section class="four-items">
+        <div class="container">
+            <div class="all-boxes">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="box d-flex align-items-center">
+                            <div class="box-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/icon1.png"
+                                    alt="">
+                            </div>
+                            <div class="box-text">
+                                <h5>Free Shipping</h5>
+                                <p>On all orders over $75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="box d-flex  align-items-center">
+                            <div class="box-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/icon1.png"
+                                    alt="">
+                            </div>
+                            <div class="box-text">
+                                <h5>Free Shipping</h5>
+                                <p>On all orders over $75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="box d-flex align-items-center">
+                            <div class="box-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/icon1.png"
+                                    alt="">
+                            </div>
+                            <div class="box-text">
+                                <h5>Free Shipping</h5>
+                                <p>On all orders over $75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="box d-flex align-items-center">
+                            <div class="box-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/icon1.png"
+                                    alt="">
+                            </div>
+                            <div class="box-text">
+                                <h5>Free Shipping</h5>
+                                <p>On all orders over $75.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="new-arrival">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-img-1">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-content">
+                            <p><a href="#" class="fir">Graphic Corner</a></p>
+                            <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                            <div class="box-ico d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>$39.00</p>
+                            <button>Add to cart</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-img-1">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-content">
+                            <p><a href="#" class="fir">Graphic Corner</a></p>
+                            <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                            <div class="box-ico d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>$39.00</p>
+                            <button>Add to cart</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-img-1">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-content">
+                            <p><a href="#" class="fir">Graphic Corner</a></p>
+                            <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                            <div class="box-ico d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>$39.00</p>
+                            <button>Add to cart</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="box">
+                        <div class="box-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-img-1">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                alt="">
+                        </div>
+                        <div class="box-content">
+                            <p><a href="#" class="fir">Graphic Corner</a></p>
+                            <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                            <div class="box-ico d-flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>$39.00</p>
+                            <button>Add to cart</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="need">
+        <div class="container">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="need-img ">
+                    <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/img4_h1.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="sell">
+        <div class="container">
+            <div class="d-flex row">
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="left">
+                        <div class="left-head d-flex align-items-center">
+                            <div class="left-head-text">
+                                <h3>Best Sellers</h3>
+                            </div>
+                        </div>
+
+                        <div class="left-boxes">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="box d-flex">
+                                    <div class="box-imgs">
+                                        <div class="box-img">
+                                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="box-img-1">
+                                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="box d-flex">
+                                    <div class="box-imgs">
+                                        <div class="box-img">
+                                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="box-img-1">
+                                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <div class="box d-flex">
+                                    <div class="box-imgs">
+                                        <div class="box-img">
+                                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                                alt="">
+                                        </div>
+                                        <div class="box-img-1">
+                                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="right">
+                        <div class="right-head">
+                            <h1>Deals Of The Day</h1>
+                        </div>
+
+
+                        <div class="right-all d-flex row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="right-images">
+                                    <div class="right-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/71-home_default/hummingbird-printed-sweater1.jpg"
+                                            alt="">
+                                    </div>
+
+                                    <div class="right-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/54-home_default/blood-collection-tubes.jpg"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                                <div class="right-content">
+                                    <div class="content-head">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="right-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <div class="prices d-flex">
+                                            <p class="price">$36.66</p>
+                                            <del>
+                                                <p class="price-1">$39.00</p>
+                                            </del>
+                                        </div>
+                                    </div>
+
+                                    <div class="content-main">
+                                        <p class="alcohol">Alcohol, cigarettes, unhealthy food, stresses and other
+                                            factors have en killing people without leaving them
+                                            any chance to survive. All these diseases are even worse than wars by
+                                            the quantity of deaths.</p>
+                                        <p class="availab">Availability: <span>899 In Stock</span></p>
+                                        <button>Add To Cart</button>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+    </section>
+
+
+    <section class="two-imgs">
+        <div class="container">
+            <div class="d-flex row">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="img-1">
+                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/img1_h3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="img-2">
+                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/img2_h3.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="catheter">
+        <div class="container">
+            <div class=" d-flex row">
+                <div class="catheter-head">
+                    <h1>Catheter</h1>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="left">
+                        <div class="left-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/left_img.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                    <div class="rigth">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="echinocandins">
+        <div class="container">
+            <div class="d-flex row">
+
+                <div class="echinocandis-head">
+                    <h1>Catheter</h1>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="left">
+                        <div class="left-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/left2_img.jpg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                    <div class="rigth">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/108-home_default/the-best-is-yet-to-come-framed-poster.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-img-1">
+                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/91-home_default/blood-collection-tubes1.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <p><a href="#" class="fir">Graphic Corner</a></p>
+                                        <p><a href="#" class="sec">Baby Care1 Equipments</a></p>
+                                        <div class="box-ico d-flex">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <p>$39.00</p>
+                                        <button>Add to cart</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="logo">
+        <div class="container">
+            <div class="row">
+                <div class="all-logo">
+                    <div class="d-flex row align-items-center">
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="logo-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/blocklogo/1.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="logo-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/blocklogo/1.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="logo-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/blocklogo/1.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div class="logo-img">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/blocklogo/1.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <!-- <div class="container"> -->
+            <div class="d-flex row">
+                <div class=" left col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="all-left">
+                        <div class="left-img">
+                            <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/logo_footer.png"
+                                alt="">
+                        </div>
+                        <div class="left-content">
+                            <div class="left-head">
+                                <p>We are a team of designers and developers that create high quality Magento,
+                                    Prestashop, Opencart.</p>
+                            </div>
+                            <div class="left-phone d-flex">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <div class="left-phone-text">
+                                    <p class="help">NEED HELP?</p>
+                                    <p class="numb">(+800) 345 678, (+800) 123 456</p>
+                                </div>
+                            </div>
+                            <div class="left-icons">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="left-last">
+                                <p>Copyright © Posthemes. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" right col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Prices Drop</a></li>
+                                            <li><a href="#">New Products</a></li>
+                                            <li><a href="#">Best Sales</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Legal Notice</a></li>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Prices Drop</a></li>
+                                            <li><a href="#">New Products</a></li>
+                                            <li><a href="#">Best Sales</a></li>
+                                            <li><a href="#">Sitemap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                                <div class="products">
+                                    <div class="products-head d-flex">
+                                        <h4>Products</h4>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </div>
+                                    <div class="product-content last">
+                                        <ul class="list-unstyled last-ul">
+                                            <li><a href="#">Sign up for our e-mail to get latest news.</a></li>
+                                            <li class="sign"><a href="#">
+                                                    <form>
+                                                        <input type="email" placeholder="Your email adress">
+                                                        <button>Sign Up</button>
+                                                    </form>
+                                                </a></li>
+                                            <li><a href="#">
+                                                    <div class="li-img d-flex">
+                                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/app_store.png"
+                                                            alt="">
+                                                        <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/google_play.png"
+                                                            alt="">
+                                                    </div>
+                                                </a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-imgs">
+                                <img src="http://demo.posthemes.com/pos_optima_medical6789/medical8/img/cms/payment.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+    </footer>
+
+
+
+    <script src="vendors/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
